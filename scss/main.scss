@@ -110,6 +110,19 @@ main {
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
     }
+
+    .job-specs{
+        margin-bottom: 45px;
+        .job-location {
+            font-size: 15px;
+            float: left;
+        }
+    
+        .job-time {
+            font-size: 12px;
+            float: right;
+        }
+    }
 }
 
 // Work/Projects
