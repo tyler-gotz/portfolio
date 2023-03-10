@@ -1,14 +1,29 @@
 {
   "name": "modern_portfolio",
-  "version": "1.0.0",
-  "description": "Responsive Portfolio Website",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "Tyler Gotz",
-  "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.9.2"
+    "@react-three/drei": "^9.57.2",
+    "@react-three/fiber": "^8.12.0",
+    "framer-motion": "^10.2.4",
+    "maath": "^0.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.112",
+    "react-router-dom": "^6.9.0",
+    "react-vertical-timeline-component": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0"
   }
 }
