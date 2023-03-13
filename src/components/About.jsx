@@ -12,7 +12,7 @@ const ServiceCard = ({ index, title, icon }) => {
     >
       <motion.div
         variants={fadeIn('right', 'spring', .5 * index, 0.7)}
-        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+        className='w-full lime-green-dark-green-gradient p-[1px] rounded-[20px]'
       >
         <div
           options={{
@@ -20,10 +20,10 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450
           }}
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col'
+          className='bg-[#f1f1f1] rounded-[20px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col'
         >
           <img src={icon} alt={title} className='w-16 h-16 object-contain' />
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          <h3 className='text-black text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div> 
     </Tilt>
@@ -41,9 +41,10 @@ const About = () => {
         variants={fadeIn('', '', .1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I&apos;m a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I&apos;m a quick learner and collaborate closely with clients to
+        I&apos;m a skilled software developer bringing knowledge from around the world
+        with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React and Node.js. 
+        I&apos;m a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let&apos;s work together to bring your ideas to life!
       </motion.p>
