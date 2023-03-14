@@ -24,6 +24,18 @@ const Navbar = () => {
           <p className='text-black text-[24px] font-bold cursor-pointer flex'>Tyler Gotz</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+          <li>
+            <a 
+              href="/" 
+              onClick={() => {
+                setActive('')
+                window.scrollTo(0, 0)
+              }}
+              className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'
+            >
+              Home
+            </a>
+          </li>
           {
             navLinks.map((navLink) => (
               <li 

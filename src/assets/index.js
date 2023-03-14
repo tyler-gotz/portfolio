@@ -18,14 +18,11 @@ import redux from './tech/redux.png'
 import typescript from './tech/typescript.png'
 import express from './tech/express.png'
 import bootstrap from './tech/bootstrap.png'
+import mysql from './tech/mysql.png'
 
 import hochunk from './company/hochunk.png'
 import dodles from './company/dodles.png'
 import teschglobal from './company/teschglobal.png'
-
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
 
 export {
   logo,
@@ -47,10 +44,8 @@ export {
   typescript,
   bootstrap,
   express,
+  mysql,
   hochunk,
   dodles,
   teschglobal,
-  carrent,
-  jobit,
-  tripguide,
 }
