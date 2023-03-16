@@ -24,6 +24,8 @@ import hochunk from './company/hochunk.png'
 import dodles from './company/dodles.png'
 import teschglobal from './company/teschglobal.png'
 
+import drwagner from './projects/drwagner.png'
+
 export {
   logo,
   backend,
@@ -48,4 +50,5 @@ export {
   hochunk,
   dodles,
   teschglobal,
+  drwagner
 }
