@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
                         whileTap={{ scale: 0.95 }}
                         onClick={scrollToProjects}
                     >
-                        🏔️ See My Climbs
+                        See My Climbs
                     </motion.button>
 
                     <motion.button
@@ -131,7 +131,7 @@ const Hero: React.FC = () => {
                         whileTap={{ scale: 0.95 }}
                         onClick={scrollToConact}
                     >
-                        🐐 Let's Graze Together
+                        Let's Graze Together
                     </motion.button>
                 </motion.div>
             </div>

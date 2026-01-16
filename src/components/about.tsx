@@ -1,3 +1,4 @@
+import { Heart, Leaf, Mountain, Zap } from 'lucide-react';
 import { useInView, motion } from 'motion/react';
 import React, { useRef } from 'react'
 
@@ -7,31 +8,31 @@ const About: React.FC = () => {
 
     const traits = [
         {
-            emoji: "🏔️",
+            icon: Mountain,
             title: "Climb High",
             description: "Like a mountain goat, I tackle the steepest challenges with confidence and agility.",
         },
         {
-            emoji: "🌿",
+            icon: Leaf,
             title: "Natural Grace",
             description: "Elegant solutions that feel organic and flow naturally, just like nature intended.",
         },
         {
-            emoji: "❤️",
+            icon: Heart,
             title: "Stubborn (in a good way)",
             description: "Once I commit to a project, I won't stop until it's perfect. Goat-level determination.",
         },
         {
-            emoji: "⚡",
+            icon: Zap,
             title: "Sure-Footed",
             description: "Navigate complex codebases with the precision of a goat on a cliff edge.",
         },
     ];
 
     const achievements = [
-        { emoji: "🏔️", number: "15+", label: "Mountains Climbed (Projects)" },
-        { emoji: "🐐", number: "10", label: "Years Being Stubborn" },
-        { emoji: "🌱", number: "5+", label: "Happy Herds (Clients)" },
+        { number: "15+", label: "Mountains Climbed (Projects)" },
+        { number: "10", label: "Years Being Stubborn" },
+        { number: "5+", label: "Happy Herds (Clients)" },
     ];
 
     return (
@@ -88,7 +89,7 @@ const About: React.FC = () => {
                                 whileHover={{ scale: 1.2, rotate: 360 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                {trait.emoji}
+                                <trait.icon className="w-12 h-12 text-green-600" />
                             </motion.div>
                             <h3 className="text-2xl text-green-900 mb-3">{trait.title}</h3>
                             <p className="text-green-700">{trait.description}</p>
@@ -110,8 +111,7 @@ const About: React.FC = () => {
                             whileHover={{ scale: 1.1, rotate: 5 }}
                             className="bg-gradient-to-br from-green-500 to-emerald-600 p-8 rounded-2xl text-center text-white shadow-xl"
                         >
-                            <div className="text-5xl mb-3">{achievement.emoji}</div>
-                            <div className="text-4xl mb-2">{achievement.number}</div>
+                            <div className="text-5xl mb-3">{achievement.number}</div>
                             <div className="text-sm opacity-90">{achievement.label}</div>
                         </motion.div>
                     ))}
@@ -131,7 +131,7 @@ const About: React.FC = () => {
                         🐐
                     </motion.div>
                     <div className="relative z-10">
-                        <h3 className="text-3xl text-green-900 mb-6">🌿 My Philosophy</h3>
+                        <h3 className="text-3xl text-green-900 mb-6">My Philosophy</h3>
                         <p className="text-xl text-green-800 italic leading-relaxed">
                             "Why follow the beaten path when you can climb your own mountain? I believe in
                             finding creative solutions, taking risks, and never backing down from a challenge.
