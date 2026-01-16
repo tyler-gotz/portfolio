@@ -1,7 +1,8 @@
-import React from "react"
-import Hero from "./components/hero"
-import About from "./components/about"
-import Skills from "./components/skills"
+import React from "react";
+import Hero from "./components/hero";
+import About from "./components/about";
+import Skills from "./components/skills";
+import Projects from "./components/projects";
 
 const App: React.FC = () => {
   return (
@@ -9,8 +10,9 @@ const App: React.FC = () => {
       <Hero />
       <About />
       <Skills />
+      <Projects />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
